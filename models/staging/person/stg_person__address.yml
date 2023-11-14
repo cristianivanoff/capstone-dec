@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: person_address
+  - name: stg_person__address
     description: ""
     columns:
       - name: _airbyte_raw_id

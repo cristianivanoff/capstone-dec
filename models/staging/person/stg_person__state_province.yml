@@ -2,7 +2,7 @@ version: 2
 
 models:
 
-  - name: person_state_province
+  - name: stg_person__state_province
     description: ""
     columns:
       - name: _airbyte_raw_id

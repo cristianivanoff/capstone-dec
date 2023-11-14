@@ -2,7 +2,7 @@ version: 2
 
 models:
 
-  - name: product_sub_category
+  - name: stg_product__sub_category
     description: ""
     columns:
       - name: _airbyte_raw_id

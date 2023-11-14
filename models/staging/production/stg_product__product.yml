@@ -2,7 +2,7 @@
 version: 2
 
 models:
-  - name: product
+  - name: stg_product__product
     description: ""
     columns:
       - name: _airbyte_raw_id

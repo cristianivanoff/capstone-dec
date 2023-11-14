@@ -2,7 +2,7 @@ version: 2
 
 models:
 
-  - name: person_country_region
+  - name: stg_person__country_region
     description: ""
     columns:
       - name: _airbyte_raw_id
