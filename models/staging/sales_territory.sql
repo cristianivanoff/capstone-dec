@@ -20,7 +20,7 @@ renamed as (
         , saleslastyear
         , rowguid
         , countryregioncode
-        , group
+        , `group` as group_name
 
     from source
 

@@ -1,0 +1,118 @@
+
+version: 2
+
+models:
+  - name: sales_order_header
+    description: ""
+    columns:
+      - name: _airbyte_raw_id
+        data_type: string
+        description: ""
+
+      - name: _airbyte_extracted_at
+        data_type: timestamp
+        description: ""
+
+      - name: _airbyte_meta
+        data_type: json
+        description: ""
+
+      - name: shiptoaddressid
+        data_type: int64
+        description: ""
+
+      - name: purchaseordernumber
+        data_type: string
+        description: ""
+
+      - name: billtoaddressid
+        data_type: int64
+        description: ""
+
+      - name: onlineorderflag
+        data_type: string
+        description: ""
+
+      - name: freight
+        data_type: numeric
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+      - name: orderdate
+        data_type: datetime
+        description: ""
+
+      - name: creditcardid
+        data_type: int64
+        description: ""
+
+      - name: rowguid
+        data_type: string
+        description: ""
+
+      - name: creditcardapprovalcode
+        data_type: string
+        description: ""
+
+      - name: shipdate
+        data_type: datetime
+        description: ""
+
+      - name: shipmethodid
+        data_type: int64
+        description: ""
+
+      - name: accountnumber
+        data_type: string
+        description: ""
+
+      - name: totaldue
+        data_type: numeric
+        description: ""
+
+      - name: salespersonid
+        data_type: int64
+        description: ""
+
+      - name: duedate
+        data_type: datetime
+        description: ""
+
+      - name: subtotal
+        data_type: numeric
+        description: ""
+
+      - name: customerid
+        data_type: int64
+        description: ""
+
+      - name: territoryid
+        data_type: int64
+        description: ""
+
+      - name: salesorderid
+        data_type: int64
+        description: ""
+
+      - name: revisionnumber
+        data_type: int64
+        description: ""
+
+      - name: comment
+        data_type: string
+        description: ""
+
+      - name: currencyrateid
+        data_type: int64
+        description: ""
+
+      - name: taxamt
+        data_type: numeric
+        description: ""
+
+      - name: status
+        data_type: int64
+        description: ""

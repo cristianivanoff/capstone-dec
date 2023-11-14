@@ -1,0 +1,33 @@
+version: 2
+
+models:
+   - name: special_offer_product
+    description: ""
+    columns:
+      - name: _airbyte_raw_id
+        data_type: string
+        description: ""
+
+      - name: _airbyte_extracted_at
+        data_type: timestamp
+        description: ""
+
+      - name: _airbyte_meta
+        data_type: json
+        description: ""
+
+      - name: productid
+        data_type: int64
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+      - name: specialofferid
+        data_type: int64
+        description: ""
+
+      - name: rowguid
+        data_type: string
+        description: ""

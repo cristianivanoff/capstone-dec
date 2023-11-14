@@ -1,0 +1,43 @@
+
+version: 2
+
+models:
+
+  - name: store
+    description: ""
+    columns:
+      - name: _airbyte_raw_id
+        data_type: string
+        description: ""
+
+      - name: _airbyte_extracted_at
+        data_type: timestamp
+        description: ""
+
+      - name: _airbyte_meta
+        data_type: json
+        description: ""
+
+      - name: businessentityid
+        data_type: int64
+        description: ""
+
+      - name: salespersonid
+        data_type: int64
+        description: ""
+
+      - name: name
+        data_type: string
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+      - name: rowguid
+        data_type: string
+        description: ""
+
+      - name: demographics
+        data_type: string
+        description: ""

@@ -1,0 +1,42 @@
+
+version: 2
+
+models:
+  - name: shopping_cart_item
+    description: ""
+    columns:
+      - name: _airbyte_raw_id
+        data_type: string
+        description: ""
+
+      - name: _airbyte_extracted_at
+        data_type: timestamp
+        description: ""
+
+      - name: _airbyte_meta
+        data_type: json
+        description: ""
+
+      - name: shoppingcartid
+        data_type: string
+        description: ""
+
+      - name: shoppingcartitemid
+        data_type: int64
+        description: ""
+
+      - name: quantity
+        data_type: int64
+        description: ""
+
+      - name: productid
+        data_type: int64
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+      - name: datecreated
+        data_type: datetime
+        description: ""
