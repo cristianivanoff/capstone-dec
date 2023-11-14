@@ -1,7 +1,7 @@
 version: 2
 
 models:
-   - name: special_offer_product
+  - name: special_offer_product
     description: ""
     columns:
       - name: _airbyte_raw_id
