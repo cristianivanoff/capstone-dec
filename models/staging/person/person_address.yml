@@ -1,0 +1,53 @@
+version: 2
+
+models:
+  - name: person_address
+    description: ""
+    columns:
+      - name: _airbyte_raw_id
+        data_type: string
+        description: ""
+
+      - name: _airbyte_extracted_at
+        data_type: timestamp
+        description: ""
+
+      - name: _airbyte_meta
+        data_type: json
+        description: ""
+
+      - name: city
+        data_type: string
+        description: ""
+
+      - name: spatiallocation
+        data_type: string
+        description: ""
+
+      - name: postalcode
+        data_type: string
+        description: ""
+
+      - name: addressline2
+        data_type: string
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+      - name: stateprovinceid
+        data_type: int64
+        description: ""
+
+      - name: addressline1
+        data_type: string
+        description: ""
+
+      - name: rowguid
+        data_type: string
+        description: ""
+
+      - name: addressid
+        data_type: int64
+        description: ""
