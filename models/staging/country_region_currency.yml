@@ -4,6 +4,12 @@ version: 2
 models:
 
   - name: country_region_currency
+    config:
+      contract:
+        enforced: true
+    constraints:
+      - type: primary_key
+        columns: [countryregioncode,currencycode]
     description: ""
     columns:
       - name: _airbyte_raw_id
@@ -24,8 +30,12 @@ models:
 
       - name: currencycode
         data_type: string
+        constraints:
+          - type: not_null
         description: ""
 
       - name: countryregioncode
         data_type: string
+        constraints:
+          - type: not_null
         description: ""
