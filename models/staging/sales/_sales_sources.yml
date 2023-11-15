@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: sales
+    tables:
+      - name: countryregioncurrency
+      - name: creditcard
+      - name: currency
+      - name: currencyrate
+      - name: customer
+      - name: personcreditcard
+      - name: salesorderdetail
+      - name: salesorderheader
+      - name: salesorderheadersalesreason
+      - name: salesperson
+      - name: salespersonquotahistory
+      - name: salesreason
+      - name: salestaxrate
+      - name: salesterritory
+      - name: salesterritoryhistory
+      - name: shoppingcartitem
+      - name: specialoffer
+      - name: specialofferproduct
+      - name: store
+      - name: vindividualcustomer
+      - name: vpersondemographics
+      - name: vsalesperson
+      - name: vsalespersonsalesbyfiscalyears
+      - name: vsalespersonsalesbyfiscalyearsdata
+      - name: vstorewithaddresses
+      - name: vstorewithcontacts
+      - name: vstorewithdemographics

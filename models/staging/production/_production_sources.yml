@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: production
+    tables:
+      - name: product
+      - name: productcategory
+      - name: productsubcategory

@@ -1,0 +1,62 @@
+
+version: 2
+
+models:
+  - name: special_offer
+    description: ""
+    columns:
+      - name: _airbyte_raw_id
+        data_type: string
+        description: ""
+
+      - name: _airbyte_extracted_at
+        data_type: timestamp
+        description: ""
+
+      - name: _airbyte_meta
+        data_type: json
+        description: ""
+
+      - name: enddate
+        data_type: datetime
+        description: ""
+
+      - name: discountpct
+        data_type: numeric
+        description: ""
+
+      - name: description
+        data_type: string
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+      - name: specialofferid
+        data_type: int64
+        description: ""
+
+      - name: type
+        data_type: string
+        description: ""
+
+      - name: category
+        data_type: string
+        description: ""
+
+      - name: startdate
+        data_type: datetime
+        description: ""
+
+      - name: maxqty
+        data_type: int64
+        description: ""
+
+      - name: rowguid
+        data_type: string
+        description: ""
+
+      - name: minqty
+        data_type: int64
+        description: ""

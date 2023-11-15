@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: currency_rate
+    description: ""
+    columns:
+      - name: _airbyte_raw_id
+        data_type: string
+        description: ""
+
+      - name: _airbyte_extracted_at
+        data_type: timestamp
+        description: ""
+
+      - name: _airbyte_meta
+        data_type: json
+        description: ""
+
+      - name: fromcurrencycode
+        data_type: string
+        description: ""
+
+      - name: currencyratedate
+        data_type: datetime
+        description: ""
+
+      - name: averagerate
+        data_type: numeric
+        description: ""
+
+      - name: endofdayrate
+        data_type: numeric
+        description: ""
+
+      - name: tocurrencycode
+        data_type: string
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+      - name: currencyrateid
+        data_type: int64
+        description: ""

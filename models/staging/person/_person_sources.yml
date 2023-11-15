@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: person
+    tables:
+      - name: address
+      - name: countryregion
+      - name: person
+      - name: stateprovince

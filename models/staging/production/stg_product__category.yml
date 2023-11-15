@@ -1,0 +1,34 @@
+version: 2
+
+models:
+
+  - name: stg_product__category
+    description: ""
+    columns:
+      - name: _airbyte_raw_id
+        data_type: string
+        description: ""
+
+      - name: _airbyte_extracted_at
+        data_type: timestamp
+        description: ""
+
+      - name: _airbyte_meta
+        data_type: json
+        description: ""
+
+      - name: productcategoryid
+        data_type: int64
+        description: ""
+
+      - name: name
+        data_type: string
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+      - name: rowguid
+        data_type: string
+        description: ""

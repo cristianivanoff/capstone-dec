@@ -1,0 +1,59 @@
+
+version: 2
+
+models:
+
+  - name: sales_order_detail
+    description: ""
+    columns:
+      - name: _airbyte_raw_id
+        data_type: string
+        description: ""
+
+      - name: _airbyte_extracted_at
+        data_type: timestamp
+        description: ""
+
+      - name: _airbyte_meta
+        data_type: json
+        description: ""
+
+      - name: productid
+        data_type: int64
+        description: ""
+
+      - name: salesorderdetailid
+        data_type: int64
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+      - name: salesorderid
+        data_type: int64
+        description: ""
+
+      - name: specialofferid
+        data_type: int64
+        description: ""
+
+      - name: orderqty
+        data_type: int64
+        description: ""
+
+      - name: unitprice
+        data_type: numeric
+        description: ""
+
+      - name: rowguid
+        data_type: string
+        description: ""
+
+      - name: unitpricediscount
+        data_type: numeric
+        description: ""
+
+      - name: carriertrackingnumber
+        data_type: string
+        description: ""
