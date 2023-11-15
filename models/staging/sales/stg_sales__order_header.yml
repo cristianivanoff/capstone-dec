@@ -2,7 +2,7 @@
 version: 2
 
 models:
-  - name: sales_order_header
+  - name: stg_sales__order_header
     description: ""
     columns:
       - name: _airbyte_raw_id

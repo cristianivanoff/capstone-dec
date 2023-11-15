@@ -1,7 +1,9 @@
+
 version: 2
 
 models:
-  - name: customer
+
+  - name: stg_sales__order_detail
     description: ""
     columns:
       - name: _airbyte_raw_id
@@ -16,11 +18,11 @@ models:
         data_type: json
         description: ""
 
-      - name: customerid
+      - name: productid
         data_type: int64
         description: ""
 
-      - name: territoryid
+      - name: salesorderdetailid
         data_type: int64
         description: ""
 
@@ -28,14 +30,30 @@ models:
         data_type: datetime
         description: ""
 
-      - name: personid
+      - name: salesorderid
         data_type: int64
         description: ""
 
-      - name: storeid
+      - name: specialofferid
         data_type: int64
+        description: ""
+
+      - name: orderqty
+        data_type: int64
+        description: ""
+
+      - name: unitprice
+        data_type: numeric
         description: ""
 
       - name: rowguid
+        data_type: string
+        description: ""
+
+      - name: unitpricediscount
+        data_type: numeric
+        description: ""
+
+      - name: carriertrackingnumber
         data_type: string
         description: ""

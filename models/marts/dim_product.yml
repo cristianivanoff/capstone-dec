@@ -1,0 +1,130 @@
+version: 2
+
+models:
+  - name: dim_product
+    description: ""
+    contract:
+      enforced: true
+    constraints:
+      - type: primary_key
+        columns: [product_key]
+    columns:
+      - name: product_key
+        data_type: string
+        description: The surrogate key of the product
+        tests:
+          - not_null
+          - unique
+
+      - name: productid
+        data_type: int64
+        description: The natural key of the product
+        tests:
+          - not_null
+          - unique
+
+      - name: product_name
+        data_type: string
+        description: The product name
+        tests:
+          - not_null
+
+      - name: productline
+        data_type: string
+        description: ""
+
+      - name: color
+        data_type: string
+        description: ""
+
+      - name: modifieddate
+        data_type: datetime
+        description: ""
+
+      - name: finishedgoodsflag
+        data_type: string
+        description: ""
+
+      - name: listprice
+        data_type: numeric
+        description: ""
+
+      - name: discontinueddate
+        data_type: datetime
+        description: ""
+
+      - name: productmodelid
+        data_type: int64
+        description: ""
+
+      - name: class
+        data_type: string
+        description: ""
+
+      - name: standardcost
+        data_type: numeric
+        description: ""
+
+      - name: daystomanufacture
+        data_type: int64
+        description: ""
+
+      - name: productsubcategoryid
+        data_type: int64
+        description: ""
+
+      - name: makeflag
+        data_type: string
+        description: ""
+
+      - name: weight
+        data_type: numeric
+        description: ""
+
+      - name: reorderpoint
+        data_type: int64
+        description: ""
+
+      - name: weightunitmeasurecode
+        data_type: string
+        description: ""
+
+      - name: size
+        data_type: string
+        description: ""
+
+      - name: safetystocklevel
+        data_type: int64
+        description: ""
+
+      - name: productnumber
+        data_type: string
+        description: ""
+
+      - name: sellenddate
+        data_type: datetime
+        description: ""
+
+      - name: sizeunitmeasurecode
+        data_type: string
+        description: ""
+
+      - name: style
+        data_type: string
+        description: ""
+
+      - name: sellstartdate
+        data_type: datetime
+        description: ""
+
+      - name: sub_category
+        data_type: string
+        description: ""
+
+      - name: category
+        data_type: string
+        description: ""
+
+      - name: extracted_at
+        data_type: timestamp
+        description: ""

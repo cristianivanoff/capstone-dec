@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_credit_card
+    description: ""
+    columns:
+      - name: creditcard_key
+        data_type: string
+        description: ""
+
+      - name: creditcardid
+        data_type: int64
+        description: ""
+
+      - name: cardtype
+        data_type: string
+        description: ""
