@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: ""
+    columns:
+      - name: customer_key
+        data_type: string
+        description: ""
+
+      - name: customerid
+        data_type: int64
+        description: ""
+
+      - name: storeid
+        data_type: int64
+        description: ""
+
+      - name: title
+        data_type: string
+        description: ""
+
+      - name: store_name
+        data_type: string
+        description: ""
+
+      - name: full_name
+        data_type: string
+        description: ""
+
+      - name: customer_modifieddate
+        data_type: datetime
+        description: ""

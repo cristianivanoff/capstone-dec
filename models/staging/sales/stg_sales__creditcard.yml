@@ -2,7 +2,7 @@
 version: 2
 
 models:
-  - name: creditcard
+  - name: stg_sales__creditcard
     description: ""
     columns:
       - name: _airbyte_raw_id

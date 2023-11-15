@@ -22,13 +22,13 @@ models:
         tests:
           - not_null
           - unique
-          
+
       - name: product_name
         data_type: string
         description: The product name
         tests:
           - not_null
-          
+
       - name: productline
         data_type: string
         description: ""

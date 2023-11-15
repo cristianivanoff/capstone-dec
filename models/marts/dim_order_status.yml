@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_order_status
+    description: ""
+    columns:
+      - name: order_status_key
+        data_type: string
+        description: ""
+
+      - name: statusid
+        data_type: int64
+        description: ""
+
+      - name: status_description
+        data_type: string
+        description: ""
