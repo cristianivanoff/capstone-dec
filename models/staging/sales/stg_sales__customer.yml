@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: sales_person
+  - name: stg_sales__customer
     description: ""
     columns:
       - name: _airbyte_raw_id
@@ -16,20 +16,8 @@ models:
         data_type: json
         description: ""
 
-      - name: salesquota
-        data_type: numeric
-        description: ""
-
-      - name: businessentityid
+      - name: customerid
         data_type: int64
-        description: ""
-
-      - name: bonus
-        data_type: numeric
-        description: ""
-
-      - name: salesytd
-        data_type: numeric
         description: ""
 
       - name: territoryid
@@ -40,14 +28,14 @@ models:
         data_type: datetime
         description: ""
 
-      - name: saleslastyear
-        data_type: numeric
+      - name: personid
+        data_type: int64
+        description: ""
+
+      - name: storeid
+        data_type: int64
         description: ""
 
       - name: rowguid
         data_type: string
-        description: ""
-
-      - name: commissionpct
-        data_type: numeric
         description: ""

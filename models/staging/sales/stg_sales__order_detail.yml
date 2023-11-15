@@ -3,7 +3,7 @@ version: 2
 
 models:
 
-  - name: sales_order_detail
+  - name: stg_sales__order_detail
     description: ""
     columns:
       - name: _airbyte_raw_id

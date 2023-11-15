@@ -1,0 +1,76 @@
+
+version: 2
+
+models:
+  - name: fct_sales
+    description: ""
+    contract:
+      enforced: true
+    constraints:
+      - type: primary_key
+        columns: [sales_key]
+    columns:
+      - name: sales_key
+        data_type: string
+        description: The surrogate key of the fct sales
+        tests:
+          - not_null
+          - unique
+
+      - name: product_key
+        data_type: string
+        description: The foreign key of the product
+        tests:
+          - not_null
+          
+      - name: customer_key
+        data_type: string
+        description: The foreign key of the customer
+        tests:
+          - not_null
+          
+      - name: creditcard_key
+        data_type: string
+        description: The foreign key of the creditcard
+        tests:
+          - not_null
+        
+      - name: ship_address_key
+        data_type: string
+        description: The foreign key of the shipping address
+        tests:
+          - not_null
+          
+      - name: order_status_key
+        data_type: string
+        description: The foreign key of the status
+        tests:
+          - not_null
+          
+      - name: order_date_key
+        data_type: string
+        description: The foreign key of the order date
+        tests:
+          - not_null
+          
+      - name: salesorderid
+        data_type: int64
+        description: ""
+
+      - name: salesorderdetailid
+        data_type: int64
+        description: ""
+
+      - name: orderqty
+        data_type: int64
+        description: The quantity of the product 
+        tests:
+          - not_null
+
+      - name: unitprice
+        data_type: numeric
+        description: Product unit price
+
+      - name: revenue
+        data_type: numeric
+        description: The revenue obtained by multiplying unitprice and orderqty

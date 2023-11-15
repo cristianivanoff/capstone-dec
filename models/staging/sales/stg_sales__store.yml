@@ -1,7 +1,9 @@
+
 version: 2
 
 models:
-  - name: customer
+
+  - name: stg_sales__store
     description: ""
     columns:
       - name: _airbyte_raw_id
@@ -16,26 +18,26 @@ models:
         data_type: json
         description: ""
 
-      - name: customerid
+      - name: businessentityid
         data_type: int64
         description: ""
 
-      - name: territoryid
+      - name: salespersonid
         data_type: int64
+        description: ""
+
+      - name: name
+        data_type: string
         description: ""
 
       - name: modifieddate
         data_type: datetime
         description: ""
 
-      - name: personid
-        data_type: int64
-        description: ""
-
-      - name: storeid
-        data_type: int64
-        description: ""
-
       - name: rowguid
+        data_type: string
+        description: ""
+
+      - name: demographics
         data_type: string
         description: ""

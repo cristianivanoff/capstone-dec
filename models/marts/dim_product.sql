@@ -10,9 +10,9 @@ stg_product as (
                                         ,"rowguid"]) }}
 
     from {{ ref("stg_product__product") }}
-),
+)
 
-stg_product_sub_category as (
+, stg_product_sub_category as (
     select
         {{ dbt_utils.star(
                             ref('stg_product__sub_category')  
@@ -24,9 +24,9 @@ stg_product_sub_category as (
                                         ,"rowguid"]) }}
 
     from {{ ref("stg_product__sub_category") }}
-),
+)
 
-stg_product_category as (
+, stg_product_category as (
     select
         {{ dbt_utils.star(
                             ref('stg_product__category')      
@@ -38,17 +38,17 @@ stg_product_category as (
                                         ,"rowguid"]) }}
 
     from {{ ref("stg_product__category") }}
-),
+)
 
-final as (
+, final as (
     select
         {{ dbt_utils.generate_surrogate_key(['p.productid']) }} as product_key
-        ,p.productid
-        ,p.name as product_name
-        ,p.* except(productid,_airbyte_extracted_at,name)
-        ,psc.name as sub_category
-        ,pc.name as category
-        ,p._airbyte_extracted_at as extracted_at
+        , p.productid
+        , p.name as product_name
+        , p.* except (productid, _airbyte_extracted_at, name)
+        , psc.name as sub_category
+        , pc.name as category
+        , p._airbyte_extracted_at as extracted_at
     from stg_product as p
     left join stg_product_sub_category as psc using (productsubcategoryid)
     left join stg_product_category as pc using (productcategoryid)
