@@ -42,5 +42,6 @@ models:
       +materialized: table
       +database: mimico-dec
       +schema: staging
-    example:
+    marts:
       +materialized: table
+      +schema: marts
