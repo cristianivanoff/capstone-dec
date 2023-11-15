@@ -46,3 +46,6 @@ models:
     marts:
       +materialized: table
       +schema: marts
+    intermediate:
+      +materialized: table
+      +schema: intermediate
