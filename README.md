@@ -130,7 +130,17 @@ Statistics on GCP Compute dashboard
   
    ![Skärmavbild 2023-11-20 kl  20 37 09](https://github.com/cristianivanoff/capstone-dec/assets/72450060/498c4575-037a-427f-b659-c93ce35c67e7)
 
+   Omni's workbook UI is focused on asking any question of both modeled and un-modeled data in your databases. Each workbook contains one or more tabs, where data can be queried either using a UI-driven pivot-table experience or by writing SQL.
 
+   The URL will update with each user action, allowing easy back and forward motions in your browser, and instant shareability of results (across all of the tabs in your workbook). The URL is structured such that each tab is encoded individually, for easy portability. The URL structure will contain a reference to each tab, and a final reference to the active tab.
+   ![Skärmavbild 2023-11-20 kl  20 43 13](https://github.com/cristianivanoff/capstone-dec/assets/72450060/0dfc0d33-9d50-4fa8-886a-a317c2f72efc)
+
+  The dashboard created:
+  
+   ![Skärmavbild 2023-11-20 kl  20 36 43](https://github.com/cristianivanoff/capstone-dec/assets/72450060/bcbe988c-3184-4885-9796-f8979fd65e96)
+
+  
+   ![Skärmavbild 2023-11-20 kl  20 36 53](https://github.com/cristianivanoff/capstone-dec/assets/72450060/969f6e80-9fab-4d2c-b58e-794246691f3e)
 
 
 ### Real-Time Data Handling
