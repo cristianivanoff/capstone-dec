@@ -105,9 +105,14 @@ My project's architecture is a sophisticated, cloud-based data processing and an
   
   ![DataEngineering_sales_mart](https://github.com/cristianivanoff/capstone-dec/assets/72450060/c0170ce1-c032-44fd-9cb1-368d5fe8d954)
 
-
 ### Orchestration
-- **Kestra**: Orchestrates Airbyte syncs and dbt Cloud jobs, installed on a GCP VM.
+- **Kestra**: Orchestrates Airbyte syncs and dbt Cloud jobs, installed on a virtual machine on GCP Compute.
+  
+![Skärmavbild 2023-11-20 kl  20 33 19](https://github.com/cristianivanoff/capstone-dec/assets/72450060/04820be3-e80f-4565-9ced-d9a11e256c6b)
+
+Statistics on GCP Compute dashboard
+![Skärmavbild 2023-11-20 kl  20 35 06](https://github.com/cristianivanoff/capstone-dec/assets/72450060/90bd0adb-555d-44a7-8b4c-91de487ed24e)
+
 
 ### Visualization and Analytics
 - **Omni**: For data visualization; creates a semantic model for dashboards, capable of real-time data presentation.
