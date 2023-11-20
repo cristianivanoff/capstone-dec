@@ -64,28 +64,28 @@ My project's architecture is a sophisticated, cloud-based data processing and an
   This is the ER-diagram from [w3resource](https://www.w3resource.com/sql-exercises/adventureworks/sql-adventureworks-sales-schema.php) showing the realtions between the sales tables.
   ![Skärmavbild 2023-11-20 kl  17 30 23](https://github.com/cristianivanoff/capstone-dec/assets/72450060/b32af3f4-cf85-4ae2-946d-943733864f2f)
 
-The database is installed on GCP SQL. Google Cloud SQL is a fully-managed database service that makes it easy to set-up, maintain, manage and administer your relational MySQL, PostgreSQL, and SQL Server databases in the cloud. Hosted on Google Cloud Platform, Cloud SQL provides a database infrastructure for applications running anywhere.
+   The database is installed on GCP SQL. Google Cloud SQL is a fully-managed database service that makes it easy to set-up, maintain, manage and administer your relational MySQL, PostgreSQL, and SQL Server databases in the cloud. Hosted on Google Cloud Platform, Cloud SQL provides a database infrastructure for applications running anywhere.
 
-![Skärmavbild 2023-11-20 kl  19 45 25](https://github.com/cristianivanoff/capstone-dec/assets/72450060/93b369e2-7042-4da8-b5e0-23d0da937827)
+   ![Skärmavbild 2023-11-20 kl  19 45 25](https://github.com/cristianivanoff/capstone-dec/assets/72450060/93b369e2-7042-4da8-b5e0-23d0da937827)
 
-![Skärmavbild 2023-11-20 kl  19 46 09](https://github.com/cristianivanoff/capstone-dec/assets/72450060/11ef6291-04e4-4c9c-afcd-fe5a78ac2f70)
+   ![Skärmavbild 2023-11-20 kl  19 46 09](https://github.com/cristianivanoff/capstone-dec/assets/72450060/11ef6291-04e4-4c9c-afcd-fe5a78ac2f70)
 
-The database is managed through PGAdmin and data was restored into the database.
+   The database is managed through PGAdmin and data was restored into the database.
 
-![Skärmavbild 2023-11-20 kl  19 50 43](https://github.com/cristianivanoff/capstone-dec/assets/72450060/3d04dac9-134e-4253-b462-43939f940423)
+   ![Skärmavbild 2023-11-20 kl  19 50 43](https://github.com/cristianivanoff/capstone-dec/assets/72450060/3d04dac9-134e-4253-b462-43939f940423)
 
 - **Airbyte**: Replicates data from PostgreSQL to Google BigQuery, set to "incremental: append+deduped" sync mode, installed on a virtual machine on GCP Compute.
   ![Skärmavbild 2023-11-20 kl  17 37 32](https://github.com/cristianivanoff/capstone-dec/assets/72450060/0c891914-121b-47ab-afaa-b88ac2a64098)
 
   Two connections are created in Airbyte but only one is used - the connection to BigQuery.
-![Skärmavbild 2023-11-20 kl  17 35 44](https://github.com/cristianivanoff/capstone-dec/assets/72450060/e89dfd56-621c-40d5-b5b6-5fd0cefa9f69)
+   ![Skärmavbild 2023-11-20 kl  17 35 44](https://github.com/cristianivanoff/capstone-dec/assets/72450060/e89dfd56-621c-40d5-b5b6-5fd0cefa9f69)
 
-One source is created to connect to the Adventureworks source database.
-![Skärmavbild 2023-11-20 kl  17 35 53](https://github.com/cristianivanoff/capstone-dec/assets/72450060/11829593-4ea7-42c8-9725-8cc64270f288)
+   One source is created to connect to the Adventureworks source database.
+   ![Skärmavbild 2023-11-20 kl  17 35 53](https://github.com/cristianivanoff/capstone-dec/assets/72450060/11829593-4ea7-42c8-9725-8cc64270f288)
 
-The connection Postgres -> BigQuery have all active streams.
+   The connection Postgres -> BigQuery have all active streams.
 
-![Skärmavbild 2023-11-20 kl  19 56 16](https://github.com/cristianivanoff/capstone-dec/assets/72450060/f973a772-2793-4dc8-a45c-5cfe91de4aad)
+   ![Skärmavbild 2023-11-20 kl  19 56 16](https://github.com/cristianivanoff/capstone-dec/assets/72450060/f973a772-2793-4dc8-a45c-5cfe91de4aad)
 
 ### Data Processing and Transformation
 - **BigQuery**: Primary data warehouse.
