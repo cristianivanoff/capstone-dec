@@ -17,9 +17,7 @@ Key areas of focus include:
 This capstone project aims to encapsulate the learnings from the camp, showcasing the ability to design, implement, and manage a comprehensive data engineering solution.
 
 ## Consumers
-
-## Consumers
-(Describe who the intended users or beneficiaries of this project are. This could include internal teams, external clients, or a particular industry sector.)
+The primary audience for this project includes fellow students participating in the Data Engineering Camp, as well as anyone with an interest in data engineering. This project serves as a practical example and a learning resource, showcasing the application of various data engineering concepts and technologies. It is particularly useful for those looking to understand how different data engineering tools can be integrated into a cohesive workflow and for individuals seeking insights into modern data engineering practices.
 
 ## Questions
 Outline the key questions your project seeks to answer. These questions guide the project's direction and scope.
