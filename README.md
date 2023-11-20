@@ -54,6 +54,7 @@ This project leverages data from two primary sources:
 
 ## Solution Architecture
 The diagram belows gives you an overview of this projects architecture.
+![DataEngineering_3](https://github.com/cristianivanoff/capstone-dec/assets/72450060/5e40fe70-d7ed-486f-90ad-7e0fb1a09b2c)
 
 ![DataEngineering_3](https://github.com/cristianivanoff/capstone-dec/assets/72450060/8c765ae0-c7c2-4856-9122-790eaa0190cb)
 
