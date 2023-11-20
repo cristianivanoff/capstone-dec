@@ -56,7 +56,7 @@ This project leverages data from two primary sources:
    - Fields: `timestamp`, `session_id`, `user_id`, `page_url`, `referrer_url`, `ip_address`, `user_agent`, `device_type`, `duration`, `country`, `order_value`.
 
 ## Solution Architecture
-Our project's architecture is a sophisticated, cloud-based data processing and analytics pipeline, employing a variety of technologies for data management and visualization:
+My project's architecture is a sophisticated, cloud-based data processing and analytics pipeline, employing a variety of technologies for data management and visualization:
 
 ### Data Storage and Ingestion
 - **PostgreSQL Database on GCP SQL**: AdventureWorks database, managed via pgAdmin.
