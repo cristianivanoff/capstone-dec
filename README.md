@@ -7,6 +7,8 @@ While the camp included training on technologies like Airflow for orchestration,
 
 A primary focus was to explore the implementation of CI/CD (Continuous Integration/Continuous Deployment) practices. However, due to time constraints, the full integration of CI/CD was not completed, highlighting the realistic challenges of project time management.
 
+Another significant aspect of this project was the exploration and utilization of Omni, a cutting-edge BI tool, for creating a semantic layer and developing interactive dashboards. This allowed us to test Omni's capabilities in creating comprehensive visualizations and aiding in data-driven decision-making, reflecting our commitment to evaluating and leveraging the best tools available in the industry.
+
 Key areas of focus include:
 
 - **Docker**: An open platform for developing, shipping, and running applications. Docker enables the creation of isolated environments (containers) that can run applications and their dependencies consistently across various computing environments.
