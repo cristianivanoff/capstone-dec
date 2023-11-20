@@ -23,10 +23,7 @@ This capstone project aims to encapsulate the learnings from the camp, showcasin
 ## Consumers
 The primary audience for this project includes fellow students participating in the Data Engineering Camp, as well as anyone with an interest in data engineering. This project serves as a practical example and a learning resource, showcasing the application of various data engineering concepts and technologies. It is particularly useful for those looking to understand how different data engineering tools can be integrated into a cohesive workflow and for individuals seeking insights into modern data engineering practices.
 
-## Questions
-Outline the key questions your project seeks to answer. These questions guide the project's direction and scope.
-
-### Business Questions
+## Business Questions
 Addressing critical business inquiries, such as:
 - **Product Analysis**: Breakdown by category and subcategories.
 - **Customer Insights**: Metrics on new customer acquisition, average spending patterns.
