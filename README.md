@@ -55,8 +55,7 @@ This project leverages data from two primary sources:
 ## Solution Architecture
 The diagram belows gives you an overview of this projects architecture.
 
-![DataEngineering](https://github.com/cristianivanoff/capstone-dec/assets/72450060/d440aa86-d145-46ca-bf4d-4b51f089d008)
-
+![DataEngineering_3](https://github.com/cristianivanoff/capstone-dec/assets/72450060/8c765ae0-c7c2-4856-9122-790eaa0190cb)
 
 My project's architecture is a sophisticated, cloud-based data processing and analytics pipeline, employing a variety of technologies for data management and visualization:
 
