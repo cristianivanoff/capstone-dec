@@ -8,6 +8,11 @@ stg_header as (
         , status as order_status
         , cast(orderdate as date) as orderdate
     from {{ ref('stg_sales__order_header') }}
+    where true
+    {% if is_incremental() %}
+        -- this filter will only be applied on an incremental run
+        orderdate > (select max(orderdate) from {{ this }}) 
+    {% endif %}
 )
 
 , stg_detail as (
@@ -19,6 +24,7 @@ stg_header as (
         , unitprice
         , unitprice * orderqty as revenue
     from {{ ref('stg_sales__order_detail') }}
+    where true
 )
 
 , final as (
@@ -30,6 +36,7 @@ stg_header as (
         , {{ dbt_utils.generate_surrogate_key(['shiptoaddressid']) }} as ship_address_key
         , {{ dbt_utils.generate_surrogate_key(['order_status']) }} as order_status_key
         , {{ dbt_utils.generate_surrogate_key(['orderdate']) }} as order_date_key
+        , stg_header.orderdate
         , stg_header.salesorderid
         , stg_detail.salesorderdetailid
         , stg_detail.orderqty
