@@ -5,6 +5,8 @@ This project serves as the capstone project for the 16-week training program at 
 
 While the camp included training on technologies like Airflow for orchestration, this project uniquely incorporates Kestra as an alternative tool to explore its capabilities. This choice exemplifies the project's commitment to not only applying learned concepts but also exploring new, potentially more effective solutions in the field of data engineering. 
 
+A primary focus was to explore the implementation of CI/CD (Continuous Integration/Continuous Deployment) practices. However, due to time constraints, the full integration of CI/CD was not completed, highlighting the realistic challenges of project time management.
+
 Key areas of focus include:
 
 - **Docker**: An open platform for developing, shipping, and running applications. Docker enables the creation of isolated environments (containers) that can run applications and their dependencies consistently across various computing environments.
