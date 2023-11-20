@@ -3,11 +3,11 @@
 ## Objective
 This project serves as the capstone project for the 16-week training program at the [Data Engineering Camp](https://dataengineercamp.com/). It is designed to test and demonstrate the practical application and integration of various data engineering technologies and concepts learned during the course. 
 
-While the camp included training on technologies like Airflow for orchestration, this project uniquely incorporates Kestra as an alternative tool to explore its capabilities. This choice exemplifies the project's commitment to not only applying learned concepts but also exploring new, potentially more effective solutions in the field of data engineering. 
+While the camp included training on technologies like Airflow for orchestration, this project uniquely incorporates [Kestra](https://kestra.io/) as an alternative tool to explore its capabilities. This choice exemplifies the project's commitment to not only applying learned concepts but also exploring new, potentially more effective solutions in the field of data engineering. 
 
 A primary focus was to explore the implementation of CI/CD (Continuous Integration/Continuous Deployment) practices. However, due to time constraints, the full integration of CI/CD was not completed, highlighting the realistic challenges of project time management.
 
-Another significant aspect of this project was the exploration and utilization of Omni, a cutting-edge BI tool, for creating a semantic layer and developing interactive dashboards. This allowed us to test Omni's capabilities in creating comprehensive visualizations and aiding in data-driven decision-making, reflecting our commitment to evaluating and leveraging the best tools available in the industry.
+Another significant aspect of this project was the exploration and utilization of [Omni](https://omni.co/), a cutting-edge BI tool, for creating a semantic layer and developing interactive dashboards. This allowed us to test Omni's capabilities in creating comprehensive visualizations and aiding in data-driven decision-making, reflecting our commitment to evaluating and leveraging the best tools available in the industry.
 
 Key areas of focus include:
 
