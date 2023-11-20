@@ -167,10 +167,6 @@ This aspect of the project demonstrates the ability to work with real-time data 
 ## Future Enhancements
 Potential additions or improvements to the project include:
 - Advanced Analytics Features
-- Real-Time Data Processing
-- User Interface Development
-- API Integrations
 - Enhanced Data Security
-- Scalability Improvements
 - **CI/CD Implementation**: For automated testing and deployment.
 
