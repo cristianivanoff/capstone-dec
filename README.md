@@ -15,8 +15,8 @@ Key areas of focus include:
 - **PostgreSQL Database**: A powerful, open-source object-relational database system known for its reliability, robustness, and performance. PostgreSQL is used for storing and managing structured data.
 - **Airbyte**: An open-source data integration tool used for replicating data from various sources to data warehouses. It enables efficient and reliable data extraction and loading, supporting incremental data syncs.
 - **Kestra**: A modern orchestration tool designed to handle complex workflows. Kestra facilitates the automation and scheduling of data pipelines, enhancing the manageability of data processing tasks.
-- **CI/CD (Continuous Integration/Continuous Deployment)**: A method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous deployment, and continuous delivery.
 - **Real-Time Data Processing**: The capability to process data immediately as it becomes available, enabling timely insights and decision-making. This concept is critical in handling streaming data and delivering up-to-date analytics.
+- **Omni**: A sophisticated BI tool used for creating a semantic layer and interactive dashboards, enabling powerful data visualization and analytics.
 
 This capstone project aims to encapsulate the learnings from the camp, showcasing the ability to design, implement, and manage a comprehensive data engineering solution.
 
