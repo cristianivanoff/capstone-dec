@@ -54,16 +54,15 @@ This project leverages data from two primary sources:
 
 ## Solution Architecture
 The diagram belows gives you an overview of this projects architecture.
-![DataEngineering_3](https://github.com/cristianivanoff/capstone-dec/assets/72450060/5e40fe70-d7ed-486f-90ad-7e0fb1a09b2c)
 
-![DataEngineering_3](https://github.com/cristianivanoff/capstone-dec/assets/72450060/8c765ae0-c7c2-4856-9122-790eaa0190cb)
+![DataEngineering_3](https://github.com/cristianivanoff/capstone-dec/assets/72450060/5e40fe70-d7ed-486f-90ad-7e0fb1a09b2c)
 
 My project's architecture is a sophisticated, cloud-based data processing and analytics pipeline, employing a variety of technologies for data management and visualization:
 
 ### Data Storage and Ingestion
 - **PostgreSQL Database on GCP SQL**: AdventureWorks database, managed via pgAdmin.
   This is the ER-diagram from [w3resource](https://www.w3resource.com/sql-exercises/adventureworks/sql-adventureworks-sales-schema.php) showing the realtions between the sales tables.
-  ![Skärmavbild 2023-11-20 kl  17 30 23](https://github.com/cristianivanoff/capstone-dec/assets/72450060/b32af3f4-cf85-4ae2-946d-943733864f2f)
+  ![Skärmavbild 2023-11-20 kl  17 30 23](https://github.com/cristianivanoff/capstone-dec/assets/72450060/7ac7973b-106c-43c8-9247-46ee59d4efab)
 
    The database is installed on GCP SQL. Google Cloud SQL is a fully-managed database service that makes it easy to set-up, maintain, manage and administer your relational MySQL, PostgreSQL, and SQL Server databases in the cloud. Hosted on Google Cloud Platform, Cloud SQL provides a database infrastructure for applications running anywhere.
 
