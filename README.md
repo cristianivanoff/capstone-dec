@@ -1,7 +1,3 @@
-Certainly! Below is the full README file for your GitHub project, incorporating all the sections and details you provided, including the project's architecture and future enhancements:
-
----
-
 # Data Engineering Camp Capstone Project
 
 ## Objective
