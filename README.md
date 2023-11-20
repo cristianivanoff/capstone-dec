@@ -152,65 +152,65 @@ The real-time data handling component of this project plays a pivotal role in pr
 - **Mock Data Generation:** A Python script is used to generate mock event data. This script simulates real-world data scenarios and serves as a key source for testing the real-time data processing capabilities of the system.
    ```python
       import os
-import random
-import time
-import json
-from datetime import datetime
-from google.cloud import pubsub_v1
-from faker import Faker
-import pytz
-
-# Set the path to your Google Cloud credentials JSON file
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/content/drive/MyDrive/Colab Notebooks/kestra_topic_publisher.json"
-
-# Initialize Faker for random data generation
-fake = Faker()
-
-# Define the Stockholm timezone
-stockholm_tz = pytz.timezone('Europe/Stockholm')
-# Get the current time in UTC
-now_utc = datetime.utcnow()
-
-# List of sample countries
-countries = ["USA", "Canada", "Germany", "France", "Japan", "Australia", "Brazil", "India", "China", "South Africa"]
-
-# Google Cloud Pub/Sub parameters
-project_id = "mimico-dec"
-topic_id = "kestra-topic-events"
-publisher = pubsub_v1.PublisherClient()
-topic_path = publisher.topic_path(project_id, topic_id)
-
-# Function to generate a mock event
-def generate_event():
-    return {
-        "timestamp": datetime.utcnow().replace(tzinfo=pytz.utc).astimezone(stockholm_tz).isoformat(), #datetime.now().isoformat(),
-        "session_id": fake.uuid4(),
-        "user_id": fake.uuid4() if random.random() > 0.5 else None,  # 50% chance of being logged in
-        "page_url": fake.url(),
-        "referrer_url": fake.url() if random.random() > 0.3 else None,  # 30% chance of having a referrer
-        "ip_address": fake.ipv4(),
-        "user_agent": fake.user_agent(),
-        "device_type": random.choice(["desktop", "tablet", "mobile"]),
-        "duration": random.randint(5, 600),  # Duration in seconds
-        "country": random.choice(countries),
-        "order_value": random.randint(0, 12500) # order value 0 = no purchase
-    }
-
-# Main loop to run for 1 hour
-#end_time = time.time() + 60 * 60  # 60 minutes from now
-#while time.time() < end_time:
-#    for _ in range(40):  # Generate 40 events per minute
-#        event_data = generate_event()
-#        # Publish to Google Cloud Pub/Sub
-#        publisher.publish(topic_path, json.dumps(event_data).encode("utf-8"))
-#    time.sleep(60)  # Wait for 1 minute
-
-# Generate and publish a proportional number of events (about 6-7 for 10 seconds)
-for _ in range(7):  # Adjust the number of events as needed
-    event_data = generate_event()
-    # Publish to Google Cloud Pub/Sub
-    publisher.publish(topic_path, json.dumps(event_data).encode("utf-8"))
-print("Event generation completed.")
+      import random
+      import time
+      import json
+      from datetime import datetime
+      from google.cloud import pubsub_v1
+      from faker import Faker
+      import pytz
+      
+      # Set the path to your Google Cloud credentials JSON file
+      os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/content/drive/MyDrive/Colab Notebooks/kestra_topic_publisher.json"
+      
+      # Initialize Faker for random data generation
+      fake = Faker()
+      
+      # Define the Stockholm timezone
+      stockholm_tz = pytz.timezone('Europe/Stockholm')
+      # Get the current time in UTC
+      now_utc = datetime.utcnow()
+      
+      # List of sample countries
+      countries = ["USA", "Canada", "Germany", "France", "Japan", "Australia", "Brazil", "India", "China", "South Africa"]
+      
+      # Google Cloud Pub/Sub parameters
+      project_id = "mimico-dec"
+      topic_id = "kestra-topic-events"
+      publisher = pubsub_v1.PublisherClient()
+      topic_path = publisher.topic_path(project_id, topic_id)
+      
+      # Function to generate a mock event
+      def generate_event():
+          return {
+              "timestamp": datetime.utcnow().replace(tzinfo=pytz.utc).astimezone(stockholm_tz).isoformat(), #datetime.now().isoformat(),
+              "session_id": fake.uuid4(),
+              "user_id": fake.uuid4() if random.random() > 0.5 else None,  # 50% chance of being logged in
+              "page_url": fake.url(),
+              "referrer_url": fake.url() if random.random() > 0.3 else None,  # 30% chance of having a referrer
+              "ip_address": fake.ipv4(),
+              "user_agent": fake.user_agent(),
+              "device_type": random.choice(["desktop", "tablet", "mobile"]),
+              "duration": random.randint(5, 600),  # Duration in seconds
+              "country": random.choice(countries),
+              "order_value": random.randint(0, 12500) # order value 0 = no purchase
+          }
+      
+      # Main loop to run for 1 hour
+      #end_time = time.time() + 60 * 60  # 60 minutes from now
+      #while time.time() < end_time:
+      #    for _ in range(40):  # Generate 40 events per minute
+      #        event_data = generate_event()
+      #        # Publish to Google Cloud Pub/Sub
+      #        publisher.publish(topic_path, json.dumps(event_data).encode("utf-8"))
+      #    time.sleep(60)  # Wait for 1 minute
+      
+      # Generate and publish a proportional number of events (about 6-7 for 10 seconds)
+      for _ in range(7):  # Adjust the number of events as needed
+          event_data = generate_event()
+          # Publish to Google Cloud Pub/Sub
+          publisher.publish(topic_path, json.dumps(event_data).encode("utf-8"))
+      print("Event generation completed.")
    ```
 
 - **Google Cloud Pub/Sub Integration:** The generated mock data is published to a topic in Google Cloud Pub/Sub. This fully managed, real-time messaging service allows for scalable and flexible data ingestion, acting as an intermediary layer that decouples data production from data processing.
