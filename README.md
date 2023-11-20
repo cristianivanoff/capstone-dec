@@ -89,6 +89,8 @@ My project's architecture is a sophisticated, cloud-based data processing and an
 
 ### Data Processing and Transformation
 - **BigQuery**: Primary data warehouse.
+  ![Skärmavbild 2023-11-20 kl  20 00 46](https://github.com/cristianivanoff/capstone-dec/assets/72450060/005b7d85-b6e5-4c6a-aec6-3ec2e96022b4)
+
 - **dbt Cloud**: Transforms data into a staging layer; constructs dimensional and fact tables.
 
 ### Orchestration
