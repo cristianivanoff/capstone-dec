@@ -1,7 +1,7 @@
 # Data Engineering Camp Capstone Project
 
 ## Objective
-The primary objective of this project is to test and demonstrate various concepts and technologies learned during a data engineering camp. The focus is on the practical application and integration of advanced data engineering tools and methodologies. Key technologies and concepts being tested include:
+This project serves as the capstone project for the 16-week training program at the [Data Engineering Camp](https://dataengineercamp.com/). It is designed to test and demonstrate the practical application and integration of various data engineering technologies and concepts learned during the course. Key areas of focus include:
 
 - **Docker**: An open platform for developing, shipping, and running applications. Docker enables the creation of isolated environments (containers) that can run applications and their dependencies consistently across various computing environments.
 - **PostgreSQL Database**: A powerful, open-source object-relational database system known for its reliability, robustness, and performance. PostgreSQL is used for storing and managing structured data.
@@ -10,7 +10,9 @@ The primary objective of this project is to test and demonstrate various concept
 - **CI/CD (Continuous Integration/Continuous Deployment)**: A method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous deployment, and continuous delivery.
 - **Real-Time Data Processing**: The capability to process data immediately as it becomes available, enabling timely insights and decision-making. This concept is critical in handling streaming data and delivering up-to-date analytics.
 
-This project serves as a platform to implement and validate these technologies and concepts in a cohesive data engineering workflow.
+This capstone project aims to encapsulate the learnings from the camp, showcasing the ability to design, implement, and manage a comprehensive data engineering solution.
+
+## Consumers
 
 ## Consumers
 (Describe who the intended users or beneficiaries of this project are. This could include internal teams, external clients, or a particular industry sector.)
