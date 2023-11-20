@@ -92,8 +92,6 @@ My project's architecture is a sophisticated, cloud-based data processing and an
   ![Skärmavbild 2023-11-20 kl  20 00 46](https://github.com/cristianivanoff/capstone-dec/assets/72450060/005b7d85-b6e5-4c6a-aec6-3ec2e96022b4)
 
 - **dbt Cloud**: In this phase of the project, data undergoes crucial processing and transformation steps to make it suitable for analysis. This includes:
-
-   Transformation with dbt Cloud: The raw data in BigQuery is transformed into a more analytics-friendly format using dbt Cloud.
    - *The transformation process* includes staging layers and the creation of dimensional and fact tables.
    - *YAML Files* for Testing and Contracts: Each table has an associated YAML file that defines tests and contracts, ensuring data quality and integrity.
    - *Potential Enhancements:* While the current setup effectively handles the data transformation needs, there are areas identified for potential enhancement. These include the implementation of incremental models to efficiently process new or updated data, snapshots to track historical changes over time, and the use of advanced window functions for more sophisticated analysis. However, due to limited time, these enhancements were not fully explored in the current iteration of the project.
