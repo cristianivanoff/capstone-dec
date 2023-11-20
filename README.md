@@ -77,6 +77,15 @@ The database is managed through PGAdmin and data was restored into the database.
 - **Airbyte**: Replicates data from PostgreSQL to Google BigQuery, set to "incremental: append+deduped" sync mode, installed on a virtual machine on GCP Compute.
   ![Skärmavbild 2023-11-20 kl  17 37 32](https://github.com/cristianivanoff/capstone-dec/assets/72450060/0c891914-121b-47ab-afaa-b88ac2a64098)
 
+  Two connections are created in Airbyte but only one is used - the connection to BigQuery.
+![Skärmavbild 2023-11-20 kl  17 35 44](https://github.com/cristianivanoff/capstone-dec/assets/72450060/e89dfd56-621c-40d5-b5b6-5fd0cefa9f69)
+
+One source is created to connect to the Adventureworks source database.
+![Skärmavbild 2023-11-20 kl  17 35 53](https://github.com/cristianivanoff/capstone-dec/assets/72450060/11829593-4ea7-42c8-9725-8cc64270f288)
+
+The connection Postgres -> BigQuery have all active streams.
+
+![Skärmavbild 2023-11-20 kl  19 56 16](https://github.com/cristianivanoff/capstone-dec/assets/72450060/f973a772-2793-4dc8-a45c-5cfe91de4aad)
 
 ### Data Processing and Transformation
 - **BigQuery**: Primary data warehouse.
