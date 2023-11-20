@@ -71,10 +71,3 @@ Potential additions or improvements to the project include:
 - Scalability Improvements
 - **CI/CD Implementation**: For automated testing and deployment.
 
----
-
-(Include any additional sections like "How to Use", "Requirements", "Contributing", "License", and "Contact" as needed.)
-
----
-
-This README provides a comprehensive overview of your project, its objectives, architecture, and future plans. You can customize and expand it further to fit the specific details and requirements of your project.
