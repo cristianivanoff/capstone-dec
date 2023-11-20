@@ -61,6 +61,9 @@ My project's architecture is a sophisticated, cloud-based data processing and an
 
 ### Data Storage and Ingestion
 - **PostgreSQL Database on GCP SQL**: AdventureWorks database, managed via pgAdmin.
+  This is the ER-diagram from [w3resource](https://www.w3resource.com/sql-exercises/adventureworks/sql-adventureworks-sales-schema.php) showing the realtions between the sales tables.
+  ![Skärmavbild 2023-11-20 kl  17 30 23](https://github.com/cristianivanoff/capstone-dec/assets/72450060/b32af3f4-cf85-4ae2-946d-943733864f2f)
+
 - **Airbyte**: Replicates data from PostgreSQL to Google BigQuery, set to "incremental: append+deduped" sync mode, installed on a GCP VM.
 
 ### Data Processing and Transformation
