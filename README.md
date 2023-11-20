@@ -144,7 +144,16 @@ Statistics on GCP Compute dashboard
 
 
 ### Real-Time Data Handling
-- **Python Script on Google Colab**: Generates mock event data, streamed into BigQuery for real-time analysis in Omni.
+- **Python Script on Google Colab**: Generates mock event data, streamed into BigQuery through a topic on gcp Pub/Sub for real-time analysis in Omni.
+The real-time data handling component of this project plays a pivotal role in processing and analyzing streaming data. The approach and technology stack have been carefully chosen to ensure efficiency and reliability.
+
+Use of Google Colab: Due to challenges with installing the Google Cloud Python library locally, Google Colab was utilized as an alternative development environment. Google Colab provides a powerful cloud-based solution that seamlessly integrates with Google Cloud services, enabling the execution of Python scripts in a managed environment without the need for local installations or configurations.
+Mock Data Generation: A Python script is used to generate mock event data. This script simulates real-world data scenarios and serves as a key source for testing the real-time data processing capabilities of the system.
+Google Cloud Pub/Sub Integration: The generated mock data is published to a topic in Google Cloud Pub/Sub. This fully managed, real-time messaging service allows for scalable and flexible data ingestion, acting as an intermediary layer that decouples data production from data processing.
+Real-Time Data Streaming to BigQuery: A subscription within Google Cloud Pub/Sub, leveraging the Stream API, is set up to consume messages from the topic and write them to Google BigQuery. This setup ensures that data is processed and made available in BigQuery in real time, allowing for immediate analysis and visualization.
+Purpose and Advantages: This real-time data handling methodology allows for the immediate processing and analysis of streaming data, which is crucial for scenarios where timely insights are essential. The use of cloud-based tools like Google Colab and Google Cloud Pub/Sub also enhances the project's scalability and reliability, while overcoming local environment limitations.
+This aspect of the project demonstrates the ability to work with real-time data flows and provides a robust framework for streaming data analysis, which is increasingly important in today's data-driven landscape.
+ 
 
 ### Version Control
 - **GitHub**: Manages all version control.
