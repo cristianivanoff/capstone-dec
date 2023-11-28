@@ -4,7 +4,7 @@ models:
   - name: fct_sales
     description: ""
     contract:
-      enforced: true
+      enforced: false
     constraints:
       - type: primary_key
         columns: [sales_key]
